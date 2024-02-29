@@ -12,7 +12,7 @@
 
     <div class="clock">
         <div class="clock-face">
-            <div class="hand hour-hand"></div>
+            <div class="hand hour-hand" id="hour"></div>
             <div class="hand min-hand"></div>
             <div class="hand second-hand"></div>
         </div>
@@ -21,7 +21,7 @@
 
     <style>
         html {
-            background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
+            background: #018DED url(https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=600);
             background-size: cover;
             font-family: 'helvetica neue';
             text-align: center;
@@ -57,6 +57,10 @@
             height: 100%;
             transform: translateY(-3px);
             /* account for the height of the clock hands */
+        }
+
+        #hour {
+            background: #353434;
         }
 
         .hand {
